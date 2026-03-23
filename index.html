@@ -36,7 +36,6 @@
             margin-bottom: 10px;
         }
 
-        /* --- ANIMACIÓN GALAXIA EN LA "O" --- */
         .brand-name {
             font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
@@ -79,7 +78,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* --- FILTROS --- */
         .filters {
             display: flex;
             gap: 15px;
@@ -102,7 +100,6 @@
 
         .filter-btn:hover { background: var(--rolex-green); color: white; }
 
-        /* --- BANNER INFORMATIVO --- */
         .info-bar {
             background: var(--rolex-green);
             color: white;
@@ -114,7 +111,6 @@
             width: 100%;
         }
 
-        /* --- CATALOGO GRID --- */
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         
         .product-grid {
@@ -184,15 +180,12 @@
             display: block;
             border: none;
             cursor: pointer;
+            text-align: center;
         }
 
         .btn-apartar { border: 1px solid var(--rolex-green); color: var(--rolex-green); background: white; }
-        .btn-apartar:hover { background: #f0f4f2; }
-
         .btn-comprar { background: var(--rolex-green); color: white; }
-        .btn-comprar:hover { background: #004429; box-shadow: 0 5px 15px rgba(0,96,57,0.3); }
 
-        /* --- MENU DE APARTADO --- */
         .apartar-dropdown {
             display: none;
             background: #f9f9f9;
@@ -211,11 +204,11 @@
             color: var(--text-dark);
             text-decoration: none;
             transition: 0.2s;
+            text-align: center;
         }
 
         .apartar-dropdown a:hover { background: var(--rolex-gold); color: white; }
 
-        /* --- PASOS DE COMPRA --- */
         .steps-section {
             background: #f0f4f2;
             padding: 60px 20px;
@@ -233,9 +226,7 @@
 
         .step-item { padding: 20px; }
         .step-item i { font-size: 2rem; color: var(--rolex-gold); margin-bottom: 15px; }
-        .step-item h4 { margin-bottom: 10px; }
 
-        /* --- REDES SOCIALES --- */
         footer {
             background: var(--text-dark);
             color: white;
@@ -244,15 +235,8 @@
         }
 
         .social-icons { margin-bottom: 20px; }
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 15px;
-            transition: 0.3s;
-        }
-        .social-icons a:hover { color: var(--rolex-gold); transform: scale(1.2); }
+        .social-icons a { color: white; font-size: 1.5rem; margin: 0 15px; transition: 0.3s; }
 
-        /* --- MOBILE ADAPTATIONS (2 POR FILA) --- */
         @media (max-width: 768px) {
             .product-grid { 
                 grid-template-columns: repeat(2, 1fr); 
@@ -260,13 +244,8 @@
                 padding: 0 5px;
             }
             .img-wrapper { height: 220px; }
-            .product-info { padding: 10px; }
             .product-info h3 { font-size: 0.9rem; }
-            .product-info p { font-size: 0.75rem; height: 35px; overflow: hidden; }
-            .brand-name { font-size: 1.8rem; }
-            .galaxy-o { width: 22px; height: 22px; }
             .btn { padding: 8px; font-size: 0.6rem; }
-            .price-tag { font-size: 0.7rem; padding: 3px 8px; top: 10px; right: 10px; }
         }
     </style>
 </head>
@@ -294,14 +273,14 @@
             <div class="product-card">
                 <div class="img-wrapper">
                     <span class="price-tag">$550 MXN</span>
-                    <img src="<a href="https://ibb.co/HpMXwxSG"><img src="https://i.ibb.co/5xz2pn0s/imagen1.jpg" alt="imagen1" border="0"></a>
+                    <img src="https://i.ibb.co/5xz2pn0s/imagen1.jpg" alt="Sudadera Nike Vintage">
                 </div>
                 <div class="product-info">
                     <span>Talla: M/L</span>
                     <h3>Sudadera Nike Vintage</h3>
                     <p>Estilo Vintage, Original y sin detalles.</p>
                     <div class="btn-group">
-                        <a href="https://ig.me/m/tu_usuario?text=Hola! Me interesa comprar: Sudadera Nike Vintage ($550)" class="btn btn-comprar">Comprar</a>
+                        <a href="https://ig.me/m/is.hoppe?text=Hola! Me interesa comprar: Sudadera Nike Vintage ($550)" class="btn btn-comprar">Comprar</a>
                         <button class="btn btn-apartar" onclick="toggleApartar(this)">Apartar</button>
                         <div class="apartar-dropdown">
                             <a href="https://ig.me/m/is.hoppe?text=Hola! Quiero apartar Sudadera Nike Vintage con $50">$50</a>
@@ -317,11 +296,11 @@
             <div class="product-card">
                 <div class="img-wrapper">
                     <span class="price-tag">$550 MXN</span>
-                    <img src="<a href="https://ibb.co/XkpDgm3t"><img src="https://i.ibb.co/FqJXMG0z/imagen2.jpg" alt="imagen2" border="0"></a>
+                    <img src="https://i.ibb.co/FqJXMG0z/imagen2.jpg" alt="Sudadera Nike Azul Cielo">
                 </div>
                 <div class="product-info">
                     <span>Talla: L</span>
-                    <h3>Sudadera Nike </h3>
+                    <h3>Sudadera Nike</h3>
                     <p>Sudadera azul cielo original, sin detalles.</p>
                     <div class="btn-group">
                         <a href="https://ig.me/m/is.hoppe?text=Hola! Me interesa comprar: Sudadera Nike Azul Cielo ($550)" class="btn btn-comprar">Comprar</a>
@@ -336,7 +315,6 @@
                     </div>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -376,10 +354,7 @@
         function toggleApartar(btn) {
             const dropdown = btn.nextElementSibling;
             const isVisible = dropdown.style.display === "grid";
-            
-            // Cerrar otros abiertos
             document.querySelectorAll('.apartar-dropdown').forEach(el => el.style.display = 'none');
-            
             dropdown.style.display = isVisible ? "none" : "grid";
         }
     </script>
